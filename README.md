@@ -13,7 +13,15 @@ Integrated Huggingface Summarization with Torch Serve. Combined other extractive
 
 - It has option to search the articles using a query by making use of Cosine Similarity between the query vector and article content vector
 
+# Architecture:
+![SHAASTRA-ARTICLE drawio](https://user-images.githubusercontent.com/57902078/215549713-f48c4120-655a-46a9-b502-22a503316c95.png)
+
+![SHAASTRA-ARTICLE-TECH drawio](https://user-images.githubusercontent.com/57902078/215549728-f813145b-b72d-4f89-8c73-12b60a8bce33.png)
+
+
 # Demo:
+
+Watch recorded demo [here](https://drive.google.com/file/d/14tntrE3LSb9CngHxyfdgoHXkG0ah5M0q/view?usp=share_link)
 
 ![Screenshot from 2023-01-27 01-11-57](https://user-images.githubusercontent.com/57902078/215547512-6747b7bb-9443-4044-be01-7ec8fd3481dc.png)
 
