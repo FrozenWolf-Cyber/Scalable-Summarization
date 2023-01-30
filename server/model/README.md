@@ -1,0 +1,1 @@
+Place your Hugginface Model - .config and .bin files of the model
