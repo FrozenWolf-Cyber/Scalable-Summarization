@@ -1,6 +1,24 @@
 # Scalable-Summarization
 Integrated Huggingface Summarization with Torch Serve. Combined other extractive methods such as Lex Ranker, TextRanker. Also have included OpenAI summarization. It also includes keyword generation for articles with query based content filtering using Cosine Similarity. Made this project for [Schlumberger's New Year Hackathon](https://unstop.com/hackathon/schlumbergers-new-year-hackathon-shaastra-2023-indian-institute-of-technology-iit-madras-572825)
 
+# Requirement:
+
+```
+bs4
+cloudscraper
+torchserve
+torch
+scikit-learn
+keybert
+trasnformers
+sentence_transformers
+openai
+fastapi
+sumy
+uvicorn
+
+```
+
 # Features:
 
 - When a topic is searched for it scrapes from a set of websites and shows the articles that appeared in each of the website. It makes use of multi-threading for scraping
@@ -17,6 +35,21 @@ Integrated Huggingface Summarization with Torch Serve. Combined other extractive
 ![SHAASTRA-ARTICLE drawio](https://user-images.githubusercontent.com/57902078/215549713-f48c4120-655a-46a9-b502-22a503316c95.png)
 
 ![SHAASTRA-ARTICLE-TECH drawio](https://user-images.githubusercontent.com/57902078/215549728-f813145b-b72d-4f89-8c73-12b60a8bce33.png)
+
+
+# Deploy:
+
+1) cd server
+2) First save t5 pretrained model files of ```AutoModelForSeq2SeqLM``` (.bin and config.json) inside ```model``` folder
+3) Run the torch serve model archiver using this command 
+```torch-model-archiver --model-name "t5" --version 1.0 --serialized-file model/pytorch_model.bin --extra-files "model/config.json" --handler handler.py ```
+4) Store the .mar files inside ```model_store``` folder using ```mv t5.mar model_store/t5.mar```
+5) Start the torch server using ```torchserve --start --model-store model_store --models t5=t5.mar```
+6) Check the serve health by pinging at port 8080. ```curl http://localhost:8080/ping```
+7) Stop the serve when required using ```torchserve --stop```
+
+8) Start Fastapi server using ```python app.py```
+9) Open index.html in website folder ot view the website.
 
 
 # Demo:
