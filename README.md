@@ -17,6 +17,4 @@ Integrated Huggingface Summarization with Torch Serve. Combined other extractive
 
 ![Screenshot from 2023-01-27 01-11-57](https://user-images.githubusercontent.com/57902078/215547512-6747b7bb-9443-4044-be01-7ec8fd3481dc.png)
 
-![Screenshot from 2023-01-26 23-43-55](https://user-images.githubusercontent.com/57902078/215548871-8fdbb5de-d921-4d0d-8505-569d548a9cf1.png)
-
-
+![Screenshot from 2023-01-27 01-14-08](https://user-images.githubusercontent.com/57902078/215549165-f0c135dc-60d1-4b21-b131-31cc2cf6e44b.png)
