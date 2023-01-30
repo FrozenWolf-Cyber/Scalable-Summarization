@@ -62,10 +62,3 @@ Watch recorded demo [here](https://drive.google.com/file/d/14tntrE3LSb9CngHxyfdg
 
 ![Screenshot from 2023-01-27 01-14-08](https://user-images.githubusercontent.com/57902078/215549165-f0c135dc-60d1-4b21-b131-31cc2cf6e44b.png)
 
-
-# Contributors:
-
-
-<a href = "https://github.com/FrozenWolf-Cyber/Scalable-Summarization)/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
-</a>
